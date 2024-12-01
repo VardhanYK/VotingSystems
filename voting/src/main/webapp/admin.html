@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+
+    <form action="AdminServlet" method="post">
+        <h2>Add Candidate</h2>
+        <input type="hidden" name="action" value="add">
+        <label for="name">Candidate Name:</label>
+        <input type="text" name="name" required>
+        <button type="submit">Add Candidate</button>
+    </form>
+
+    <form action="AdminServlet" method="post">
+        <h2>Delete Candidate</h2>
+        <input type="hidden" name="action" value="delete">
+        <label for="id">Candidate ID:</label>
+        <input type="number" name="id" required>
+        <button type="submit">Delete Candidate</button>
+    </form>
+
+    <form action="AdminServlet" method="post">
+        <h2>View Candidates</h2>
+        <input type="hidden" name="action" value="view">
+        <button type="submit">View Candidates</button>
+    </form>
+</body>
+</html>

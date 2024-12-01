@@ -1,0 +1,56 @@
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="5.0">
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.voting.servlets.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.voting.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VoteServlet</servlet-name>
+        <servlet-class>com.voting.servlets.VoteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VoteServlet</servlet-name>
+        <url-pattern>/VoteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResultsServlet</servlet-name>
+        <servlet-class>com.voting.servlets.ResultsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultsServlet</servlet-name>
+        <url-pattern>/results</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.voting.servlets.AdminServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/AdminServlet</url-pattern>
+</servlet-mapping>
+    
+    <servlet>
+    <servlet-name>TestDBConnectionServlet</servlet-name>
+    <servlet-class>com.voting.servlets.TestDBConnectionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>TestDBConnectionServlet</servlet-name>
+    <url-pattern>/testdb</url-pattern>
+</servlet-mapping>
+    
+</web-app>
